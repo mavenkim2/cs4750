@@ -12,6 +12,6 @@ class Config {
   }
 
   public function getURL() {
-    return "/{$this->proj_id}";
+    return "https://protean-sphinx-347204.ue.r.appspot.com//{$this->proj_id}";
   }
 }

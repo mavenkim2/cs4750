@@ -12,6 +12,6 @@ class Config {
   }
 
   public function getURL() {
-    return "/{$this->proj_id}";
+    return "focal-appliance-347202.uk.r.appspot.com/{$this->proj_id}";
   }
 }

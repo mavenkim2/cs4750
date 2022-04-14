@@ -37,6 +37,7 @@
           <button type="submit">Log in / Create Account</button>
         </div>
       </form>
+      <p style="color: red;"><?= $error_msg ?></p>
     </section>
     <!--Footer-->
     <footer>

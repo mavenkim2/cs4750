@@ -21,23 +21,10 @@
   <body>
   <!--Top Navigation / Header bar-->
     <header>
+      <p>Home</p>
     </header>
     <!--Main Content-->
-    <section>
-      <form id="login_form" name='login' action="<?=$this->base_url?>/account/login/" onsubmit="return validate();" method="post">
-        <div>
-          <label for="username">Username</label>
-          <input type="text" id="username" name="username"/>
-        </div>
-        <div>
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password"/>
-        </div>
-        <div>
-          <button type="submit">Log in / Create Account</button>
-        </div>
-      </form>
-    </section>
+
     <!--Footer-->
     <footer>
       <div>
@@ -46,17 +33,5 @@
         </small>
       </div>
     </footer>
-    <script>
-      function validate(){ //validates login form username
-        let user = document.forms['login']['username'].value;
-        var reg = new RegExp("[ -~]"); // checks all ASCii characters
-        if(!reg.test(user)){
-          alert("Please don't use unicode characters!!"); //non ascii characters are not allowed
-          return false;
-        } else{
-          return true;
-        }
-      }
-    </script>
   </body>
 </html>

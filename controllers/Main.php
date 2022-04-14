@@ -17,9 +17,12 @@ class Main {
     case "account":
       $this->account($parts[1]);
       break;
+    case "home":
+      $this->account($parts[1]);
+      break;
     default:
       if (isset($_SESSION["username"])) { // user is already logged in, redirect to the search page
-        $this->search("form");
+        $this->home("go_to_home");
       } else {
         $this->account("login"); // else redirect to the login page
       }
@@ -31,5 +34,10 @@ class Main {
     // forward the action to account controller
     $account = new Account();
     $account->run($action);
+  }
+
+  public function home($action){
+    $home = new Home();
+    $home->run($action);
   }
 }

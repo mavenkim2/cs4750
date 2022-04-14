@@ -39,8 +39,8 @@ class Account {
         // query succeeded and an existing user's found, validate password
         if (password_verify($_POST["password"], $data[0]["password"])) {
           $_SESSION["username"] = $data[0]["username"];
-          $_SESSION["user_id"] = $data[0]["id"];
-          header("Location: {$this->base_url}/search/search_form");
+          $_SESSION["user_id"] = $data[0]["user_id"];
+          header("Location: {$this->base_url}/");
           return;
         } else {
           $error_msg = "Invalid Password";
@@ -57,10 +57,10 @@ class Account {
 
           // create session obejcts to maintain user's state in the site
           $_SESSION["username"] = $_POST["username"];
-          $id = $this->db->query("select max(id) from user");
-          $id = $id[0]["max(id)"];
+          $id = $this->db->query("select max(user_id) from user");
+          $id = $id[0]["max(user_id)"];
           $_SESSION["user_id"] = $id;
-          header("Location: {$this->base_url}/search/search_form");
+          header("Location: {$this->base_url}/");
           return;
         } else{
 

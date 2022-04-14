@@ -7,7 +7,7 @@ class Config {
   public $proj_id;
 
   public function __construct() {
-    $this->proj_id = "uva_flashcard/";
+    $this->proj_id = "/";
   }
 
   public function getURL() {

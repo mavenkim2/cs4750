@@ -4,14 +4,15 @@
  */
 
 
- $dbserver = "http://mysql01.cs.virginia.edu/";
+ $dbserver = "128.143.63.28";
  $dbuser = "rjp5cc";
  $dbpass = "Winter2022!!";
  $dbdatabase = "rjp5cc";
+
 
 /*
 $dbserver = "localhost";
 $dbuser = "root";
 $dbpass = "";
-$dbdatabase = "cs4640";
+$dbdatabase = "flashcards";
 */

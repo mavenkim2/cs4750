@@ -4,13 +4,13 @@
  */
 
 class Config {
-  public $proj_id
+  public $proj_id;
 
   public function __construct() {
-    $this->proj_id = "uva_flashcards"
+    $this->proj_id = "uva_flashcard/";
   }
 
   public function getURL() {
-    return $this->proj_id + "/";
+    return $this->proj_id;
   }
 }

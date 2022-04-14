@@ -5,13 +5,14 @@
 
 class Config {
   public $proj_id;
+  public $computing_id;
 
   public function __construct() {
-    //$this->proj_id = "uva_flashcard";
-    $this->proj_id = "";
+    $this->computing_id="~rjp5cc";
+    $this->proj_id = "uva_flashcard";
   }
 
   public function getURL() {
-    return "protean-sphinx-347204.ue.r.appspot.com/{$this->proj_id}";
+    return "/{$this->computing_id}/{$this->proj_id}";
   }
 }

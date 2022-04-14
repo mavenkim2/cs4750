@@ -1,7 +1,7 @@
 <?php
 /*
  * Author(s): Ryu Patterson, Maven Kim, Quang Lam
- * url: https://focal-appliance-347202.uk.r.appspot.com/
+ * url: http://cs.virginia.edu/~rjp5cc/uva_flashcard/
  */
 
 spl_autoload_register(function($classname) {
